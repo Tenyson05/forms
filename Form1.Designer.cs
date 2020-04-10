@@ -28,13 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.name = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.hoursLabel = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtHours = new System.Windows.Forms.TextBox();
+            this.dateOverTime = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // name
+            // 
+            this.name.AutoSize = true;
+            this.name.Location = new System.Drawing.Point(41, 28);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(35, 13);
+            this.name.TabIndex = 0;
+            this.name.Text = "Name";
+            this.name.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // txtName
+            // 
+            this.txtName.AccessibleName = "txtName";
+            this.txtName.Location = new System.Drawing.Point(44, 60);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(124, 20);
+            this.txtName.TabIndex = 1;
+            // 
+            // hoursLabel
+            // 
+            this.hoursLabel.AutoSize = true;
+            this.hoursLabel.Location = new System.Drawing.Point(316, 28);
+            this.hoursLabel.Name = "hoursLabel";
+            this.hoursLabel.Size = new System.Drawing.Size(35, 13);
+            this.hoursLabel.TabIndex = 2;
+            this.hoursLabel.Text = "Hours";
+            this.hoursLabel.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.AccessibleName = "dateOverTime";
+            this.dateTimePicker1.Location = new System.Drawing.Point(533, 60);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 3;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // txtHours
+            // 
+            this.txtHours.AccessibleName = "txtHours";
+            this.txtHours.Location = new System.Drawing.Point(319, 60);
+            this.txtHours.Name = "txtHours";
+            this.txtHours.Size = new System.Drawing.Size(124, 20);
+            this.txtHours.TabIndex = 5;
+            // 
+            // dateOverTime
+            // 
+            this.dateOverTime.Location = new System.Drawing.Point(266, 214);
+            this.dateOverTime.Name = "dateOverTime";
+            this.dateOverTime.Size = new System.Drawing.Size(202, 54);
+            this.dateOverTime.TabIndex = 6;
+            this.dateOverTime.Text = "Save Record";
+            this.dateOverTime.UseVisualStyleBackColor = true;
+            this.dateOverTime.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dateOverTime);
+            this.Controls.Add(this.txtHours);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.hoursLabel);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.name);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label name;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label hoursLabel;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtHours;
+        private System.Windows.Forms.Button dateOverTime;
     }
 }
 

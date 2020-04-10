@@ -1,0 +1,10 @@
+C:\Users\Rojah\Documents\zip files\cSharpPractice\forms1\forms1\bin\Debug\forms1.exe.config
+C:\Users\Rojah\Documents\zip files\cSharpPractice\forms1\forms1\bin\Debug\forms1.exe
+C:\Users\Rojah\Documents\zip files\cSharpPractice\forms1\forms1\bin\Debug\forms1.pdb
+C:\Users\Rojah\Documents\zip files\cSharpPractice\forms1\forms1\obj\Debug\forms1.csprojAssemblyReference.cache
+C:\Users\Rojah\Documents\zip files\cSharpPractice\forms1\forms1\obj\Debug\forms1.Form1.resources
+C:\Users\Rojah\Documents\zip files\cSharpPractice\forms1\forms1\obj\Debug\forms1.Properties.Resources.resources
+C:\Users\Rojah\Documents\zip files\cSharpPractice\forms1\forms1\obj\Debug\forms1.csproj.GenerateResource.cache
+C:\Users\Rojah\Documents\zip files\cSharpPractice\forms1\forms1\obj\Debug\forms1.csproj.CoreCompileInputs.cache
+C:\Users\Rojah\Documents\zip files\cSharpPractice\forms1\forms1\obj\Debug\forms1.exe
+C:\Users\Rojah\Documents\zip files\cSharpPractice\forms1\forms1\obj\Debug\forms1.pdb
