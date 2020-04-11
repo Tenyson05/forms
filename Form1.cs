@@ -35,8 +35,13 @@ namespace forms1
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             string connectionString = null;
-            connectionString = @"Data Source=PracticeDB1;Initial Catalog=Test_app;UserID=Rojah;Integrated Security=SSPI";
+            connectionString = @"Data Source=networkConnection;Initial Catalog=yourdatabase;Integrated Security=true";
             SqlConnection cnn = new SqlConnection(connectionString);
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = cnn;
@@ -45,26 +50,37 @@ namespace forms1
 
             //take and check the hours
             int hours;
-            if (int.TryParse(txtHours.Text,out hours))
+            if (int.TryParse(txtHours.Text, out hours))
             {
-                if(hours > 8)
+                if (hours > 8 || hours == 0)
                 {
-                    MessageBox.Show("The numbe rof hours cannot be greater than 8! Please correct the entered value");
-                }
-                else
-                {
-                    //Correct value entered so just go ahead.
+                    MessageBox.Show("The number of hours cannot be greater than 8 hours! Please correct the entered value");
+                    return;
                 }
             }
-            else
+            else if(hours == 0 || hours < 0)
             {
                 MessageBox.Show("Please insert an integer into the hours textBox!");
                 return;
             }
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+            //insert ok data into SQL Table
+            cmd.Parameters.AddWithValue("@Name", txtName.Text);
+            cmd.Parameters.AddWithValue("@Hours", hours);
+            cmd.Parameters.AddWithValue("@Date", dateOverTime.Value);
+
+            try
+            {
+                cnn.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("The hours where added !");
+                cnn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Cannot open connection!");
+            }
+
 
         }
     }

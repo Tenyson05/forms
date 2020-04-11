@@ -31,9 +31,9 @@
             this.name = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.hoursLabel = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateOverTime = new System.Windows.Forms.DateTimePicker();
             this.txtHours = new System.Windows.Forms.TextBox();
-            this.dateOverTime = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // name
@@ -64,14 +64,14 @@
             this.hoursLabel.Text = "Hours";
             this.hoursLabel.Click += new System.EventHandler(this.label2_Click);
             // 
-            // dateTimePicker1
+            // dateOverTime
             // 
-            this.dateTimePicker1.AccessibleName = "dateOverTime";
-            this.dateTimePicker1.Location = new System.Drawing.Point(533, 60);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 3;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dateOverTime.AccessibleName = "dateOverTime";
+            this.dateOverTime.Location = new System.Drawing.Point(533, 60);
+            this.dateOverTime.Name = "dateOverTime";
+            this.dateOverTime.Size = new System.Drawing.Size(200, 20);
+            this.dateOverTime.TabIndex = 3;
+            this.dateOverTime.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // txtHours
             // 
@@ -81,24 +81,24 @@
             this.txtHours.Size = new System.Drawing.Size(124, 20);
             this.txtHours.TabIndex = 5;
             // 
-            // dateOverTime
+            // button1
             // 
-            this.dateOverTime.Location = new System.Drawing.Point(266, 214);
-            this.dateOverTime.Name = "dateOverTime";
-            this.dateOverTime.Size = new System.Drawing.Size(202, 54);
-            this.dateOverTime.TabIndex = 6;
-            this.dateOverTime.Text = "Save Record";
-            this.dateOverTime.UseVisualStyleBackColor = true;
-            this.dateOverTime.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Location = new System.Drawing.Point(266, 214);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 54);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Save Record";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dateOverTime);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtHours);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateOverTime);
             this.Controls.Add(this.hoursLabel);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.name);
@@ -115,9 +115,9 @@
         private System.Windows.Forms.Label name;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label hoursLabel;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateOverTime;
         private System.Windows.Forms.TextBox txtHours;
-        private System.Windows.Forms.Button dateOverTime;
+        private System.Windows.Forms.Button button1;
     }
 }
 
